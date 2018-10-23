@@ -1,9 +1,20 @@
   package com.tom;
 
-    public class Hello {
+import java.util.Scanner;
+
+public class Hello {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Your name:" );
+		String name = scanner.nextLine();
+		System.out.println(name);
+		
+		
+		
+		
+		
 	 int age = 18;
 	 float weight = 62f;
 	 float height = 1.75f;
@@ -19,14 +30,14 @@
 	 age = age + 1;
 	 System.out.println(age);
 	 Person p = new Person(62f,1.75f);
-//	 p.weight = 62f;
-//	 p.height = 1.75f;
+	 p.weight = 62f;
+	 p.height = 1.75f;
 	 
 	 System.out.println(p.bmi());
 	 p.hello();
-//     Person Lin  = new Person();
-//     Person jack = null ;
-//     jack.hello();
+//	 Person Lin  = new Person();
+//   Person jack = null ;
+//   jack.hello();
      }
 
 }
