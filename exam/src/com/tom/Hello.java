@@ -6,16 +6,19 @@ public class Hello {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scanner = new Scanner(System.in);
+		/*Scanner scanner = new Scanner(System.in);
 		System.out.println("Your name:" );
 		String name = scanner.nextLine();
-		System.out.println(name);
+		System.out.println(name);*/
+		
+	 
+     for(int i = 1 ; i<=5 ; i = i++ )
+     {
+    	 System.out.println(i);
+     }
 		
 		
-		
-		
-		
-	 int age = 18;
+	 /*int age = 18;
 	 float weight = 62f;
 	 float height = 1.75f;
 	 String firstname =("Lin");
@@ -34,7 +37,7 @@ public class Hello {
 	 p.height = 1.75f;
 	 
 	 System.out.println(p.bmi());
-	 p.hello();
+	 p.hello();*/
 //	 Person Lin  = new Person();
 //   Person jack = null ;
 //   jack.hello();
