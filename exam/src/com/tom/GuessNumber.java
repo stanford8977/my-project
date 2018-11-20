@@ -7,14 +7,16 @@ public class GuessNumber {
 
 	public static void main(String[] args) {
 		
+		int count = 1;
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         int secret = random.nextInt(10)+1;
         System.out.println(secret);
         
-        while( true )
+        while( count <= 4 )
         {
-            System.out.println("Your guess:");
+            System.out.println("Your guess: ("+count+"/4):");
+            count++;
             int guess = scanner.nextInt();
         	if(guess > secret)
         	{
@@ -26,11 +28,17 @@ public class GuessNumber {
         	}
         	else
         	{
-        		System.out.println("Great! The secret number is :" + secret);
         		break;
         	}
         }
-        
+        if(count < 2)
+        {
+        	System.out.println("Excellent! The secret number is :" + secret);
+        }
+        else if(count > 2 )
+        {
+        	System.out.println("Great! The secret number is :" + secret);
+        }
 	}
 
 }
