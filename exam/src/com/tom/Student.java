@@ -26,7 +26,7 @@ public class Student {
 		{
 			System.out.println("Pass");
 		}
-		
+		System.out.println(getGrading());
 	}
 	
 	public int highest()
@@ -46,7 +46,7 @@ public class Student {
 	     return(english + math)/2;
 	}
     
-	public char getGrading()
+	public char getGrading
 	{
 		char grading = 'F';
 		int average = getAverage();
